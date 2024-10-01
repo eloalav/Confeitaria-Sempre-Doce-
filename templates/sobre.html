@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sempre Doce - Sobre os Doces</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #fce4ec; /* Cor de fundo rosa claro */
+        }
+
+        /* Estilos do header */
+        header {
+            background: #f8bbd0; /* Cor de fundo rosa mais escuro */
+            padding: 1rem 0;
+        }
+
+        .logo h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: #d81b60; /* Cor rosa mais escuro para o logo */
+            text-align: center;
+        }
+
+        /* Estilos da seção "Sobre Nossos Doces" */
+        .sobre-doces {
+            padding: 2rem 1rem;
+        }
+
+        .sobre-intro, .sobre-detail, .sobre-feedback {
+            margin-bottom: 2rem;
+        }
+
+        .sobre-detail h3, .sobre-feedback h3 {
+            font-family: 'Dancing Script', cursive; /* Fonte para os títulos */
+            font-size: 2rem; /* Tamanho dos títulos */
+            color: #d5006d; /* Cor dos títulos */
+            margin-bottom: 1rem;
+            text-align: center; /* Centraliza os títulos */
+        }
+
+        .sobre-feedback {
+            text-align: center; /* Centraliza a seção de feedback */
+        }
+
+        .sobre-feedback blockquote {
+            border-left: 3px solid #d5006d; /* Cor para o destaque do depoimento */
+            padding-left: 1rem;
+            margin: 1rem auto; /* Margem automática para centralização */
+            font-style: italic;
+            max-width: 600px; /* Limita a largura para facilitar a leitura */
+        }
+
+        /* Estilos do botão */
+        .btn {
+            display: block;
+            width: fit-content; /* Ajusta a largura para caber o texto */
+            margin: 40px auto; /* Centraliza o botão e adiciona margem acima */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            text-align: center;
+            background-color: #d5006d; /* Cor do botão */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            text-decoration: none; /* Remove sublinhado */
+            font-family: 'Raleway', sans-serif; /* Fonte mais bonita para o botão */
+            font-size: 18px; /* Tamanho da fonte */
+            letter-spacing: 1px; /* Espaçamento entre letras */
+        }
+
+        .btn:hover {
+            background-color: #b0004d; /* Tom mais escuro ao passar o mouse */
+        }
+
+        footer {
+            background: #d81b60; /* Cor rosa escuro para o rodapé */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Para Sempre Doce</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre-doces" class="sobre-doces">
+        <h2 style="font-family: 'Dancing Script', cursive;">Sobre Nossos Doces</h2>
+        <div class="sobre-intro">
+            <p>No Para Sempre Doce, cada criação é uma obra de arte. Utilizamos ingredientes frescos e de alta qualidade para garantir que cada sobremesa não apenas tenha um sabor maravilhoso, mas também uma aparência irresistível.</p>
+        </div>
+        <div class="sobre-detail">
+            <h3>Nosso Processo</h3>
+            <p>Nosso processo começa com a seleção dos melhores ingredientes. Trabalhamos com fornecedores locais para garantir que nossas frutas, chocolates e outros insumos sejam sempre frescos e de alta qualidade. Priorizamos ingredientes orgânicos e sustentáveis sempre que possível.</p>
+            <p>A preparação é realizada em nossa confeitaria equipada com tecnologia de ponta, garantindo que cada doce seja produzido com a máxima precisão. Desde a mistura dos ingredientes até o acabamento final, cada etapa é cuidadosamente monitorada para assegurar o melhor resultado.</p>
+            <p>Nossos confeiteiros são apaixonados pelo que fazem e trazem uma combinação de técnicas tradicionais e inovação para cada receita. Realizamos testes e ajustes contínuos para criar novas receitas e melhorar as já existentes, sempre buscando a perfeição.</p>
+            <p>Além disso, garantimos que nossos doces sejam apresentados de forma elegante, com embalagens que realçam a experiência de degustação e proporcionam um toque especial a cada ocasião.</p>
+        </div>
+        <div class="sobre-feedback">
+            <h3>Depoimentos de Clientes</h3>
+            <blockquote>
+                <p>"Os doces do Para Sempre Doce são simplesmente irresistíveis! Cada sobremesa é uma delícia, e o atendimento é excepcional. Já recomendei a todos os meus amigos e família." - Ana Paula</p>
+            </blockquote>
+            <blockquote>
+                <p>"Nunca provei doces tão saborosos e bonitos. Sempre que tenho uma ocasião especial, não hesito em encomendar com eles. A qualidade é sempre garantida, e a entrega é pontual." - Roberto Silva</p>
+            </blockquote>
+            <blockquote>
+                <p>"Os cupcakes são meus favoritos! A decoração é linda e o sabor é incomparável. É ótimo saber que posso contar com o Para Sempre Doce para eventos importantes." - Juliana Costa</p>
+            </blockquote>
+            <blockquote>
+                <p>"Adorei a experiência com o Para Sempre Doce. A torta de frutas que encomendei foi um sucesso absoluto na festa. A apresentação e o sabor superaram minhas expectativas!" - Lucas Almeida</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <a href="/home" class="btn">Voltar para a página inicial</a> <!-- Botão para voltar -->
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

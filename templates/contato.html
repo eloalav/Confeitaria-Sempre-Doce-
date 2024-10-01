@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Para Sempre Doce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Great+Vibes&family=Poppins:wght@500&family=Montserrat:wght@400&family=Lobster&family=Raleway:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9; /* Fundo cinza claro */
+            color: #444; /* Cor do texto padrão */
+            font-family: 'Playfair Display', serif; /* Fonte bonita para o corpo */
+        }
+
+        .contato {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px; /* Aumenta a largura máxima do quadro */
+            background-color: #ff66b2; /* Fundo rosa */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+            color: #000; /* Texto preto */
+        }
+
+        .contato h2 {
+            color: #000; /* Título preto */
+            font-family: 'Lobster', cursive; /* Fonte decorativa para o título */
+            font-size: 2em; /* Aumenta o tamanho do título */
+        }
+
+        .contato p {
+            margin: 10px 0;
+            font-family: 'Poppins', sans-serif; /* Fonte do texto */
+            font-size: 1.1em; /* Tamanho da fonte */
+        }
+
+        .contato h3 {
+            font-family: 'Great Vibes', cursive; /* Fonte mais bonita para subtítulos */
+            font-size: 1.5em; /* Tamanho do subtítulo */
+            margin-top: 20px; /* Espaço acima do subtítulo */
+        }
+
+        .horario {
+            font-family: 'Poppins', sans-serif; /* Fonte dos horários */
+            font-size: 1.1em; /* Tamanho da fonte */
+            margin: 10px 0; /* Margem para espaçamento */
+        }
+
+        .btn {
+            display: block;
+            width: fit-content; /* Ajusta a largura para caber o texto */
+            margin: 40px auto; /* Aumenta a margem para mover o botão mais para baixo */
+            padding: 10px;
+            text-align: center;
+            background-color: #d5006d; /* Cor do botão */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            text-decoration: none; /* Remove sublinhado */
+            font-family: 'Poppins', sans-serif; /* Fonte do botão */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        .btn:hover {
+            background-color: #b0004d; /* Tom mais escuro ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff66b2; /* Fundo rosa */
+            color: #000; /* Texto preto */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Para Sempre Doce</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contato" class="contato">
+        <h2>Informações de Contato</h2>
+        <p>Telefone: (19) 3444-0000</p>
+        <p>WhatsApp: (19) 99662-8540</p>
+        <p>Email: contatoparasempredoce@gmail.com.br</p>
+        <p>Endereço: Rua Argentina, 123, São Paulo, SP</p>
+
+        <h3>Horário de Funcionamento</h3>
+        <p class="horario">Segunda a Sexta: 9h às 18h</p>
+        <p class="horario">Sábado: 9h às 16h</p>
+        <p class="horario">Domingo: Fechado</p>
+
+        <h3>Redes Sociais</h3>
+        <p>Instagram: <a href="https://instagram.com/parasempredoce" target="_blank">@parasempredoce</a></p>
+        <p>Facebook: <a href="https://facebook.com/parasempredoce" target="_blank">@_parasempredoce</a></p>
+
+
+        <h3>Sobre Nós</h3>
+        <p>Nossa equipe é composta por profissionais apaixonados por confeitaria, dedicados a criar doces irresistíveis para você!</p>
+        <p>Quer saber mais sobre nossos produtos? Venha nos visitar e faça uma degustação!</p>
+        <p>Temos opções personalizadas para festas e eventos, entre em contato para mais informações.</p>
+        <p>Para sugestões ou comentários, adoraríamos ouvir de você!</p>
+    </section>
+
+    <a href="/home" class="btn">Voltar para a página inicial</a>
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

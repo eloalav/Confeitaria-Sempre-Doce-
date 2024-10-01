@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sempre Doce - Cardápio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Nova fonte para o título -->
+
+    <style>
+        /* Reset de margens e preenchimentos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo fonte padrão */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #fce4ec; /* Cor de fundo rosa claro */
+        }
+
+        /* Estilos do header */
+        header {
+            background: #f8bbd0; /* Cor de fundo rosa mais escuro */
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: #d81b60; /* Cor rosa mais escuro para o logo */
+        }
+
+        /* Estilos do cardápio */
+        .cardapio {
+            padding: 2rem 1rem;
+        }
+
+        .cardapio h2 {
+            font-family: 'Dancing Script', cursive; /* Fonte bonita para o título do cardápio */
+            font-size: 2.5rem; /* Tamanho do título */
+            color: #c2185b; /* Cor para o título */
+            text-align: center; /* Centraliza o título */
+            margin-bottom: 2rem; /* Espaçamento abaixo do título */
+        }
+
+        .cardapio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .cardapio-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            background: #fff;
+            text-align: center;
+            border: 2px solid #f06292; /* Borda rosa claro para os itens do cardápio */
+        }
+
+        .cardapio-item img {
+            width: 100%; /* Largura total do item */
+            height: 200px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Cobre o espaço da imagem sem distorcer */
+            border-radius: 5px;
+        }
+
+        .cardapio-item h3 {
+            margin-top: 0.5rem;
+            color: #c2185b; /* Cor rosa mais forte para os títulos dos itens */
+        }
+
+        .cardapio-item p {
+            margin: 0.5rem 0;
+        }
+
+        .preco {
+            font-weight: bold;
+            color: #d81b60; /* Cor para os preços */
+        }
+
+        .btn {
+            display: block;
+            width: fit-content; /* Ajusta a largura para caber o texto */
+            margin: 40px auto; /* Centraliza o botão e adiciona margem acima */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            text-align: center;
+            background-color: #d5006d; /* Cor do botão */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            text-decoration: none; /* Remove sublinhado */
+            font-family: 'Raleway', sans-serif; /* Fonte mais bonita para o botão */
+            font-size: 18px; /* Tamanho da fonte */
+            letter-spacing: 1px; /* Espaçamento entre letras */
+        }
+
+        .btn:hover {
+            background-color: #b0004d; /* Tom mais escuro ao passar o mouse */
+        }
+
+        footer {
+            background: #d81b60; /* Cor rosa escuro para o rodapé */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Para Sempre Doce</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section id="cardapio" class="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="cardapio-container">
+            <!-- Itens do cardápio -->
+            <div class="cardapio-item">
+                <img src="https://www.estadao.com.br/resizer/v2/FIVYQFU6J5ND3PYRA6XQHR4NW4.jpg?quality=80&auth=04a93b8f4c288302da64fd8a96da7bb7cc11dff70430e4ba66587218d5b6011f&width=720&height=503&focal=0,0" alt="Bolo de Chocolate">
+                <h3>Bolo de Chocolate</h3>
+                <p>Uma deliciosa combinação de chocolate, creme e morango, perfeita para qualquer ocasião.</p>
+                <p class="preco">R$ 89,90 p/kg</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ST9R9wsey0Ri53lEHmdeq0G9azbhs8uLtg&s" alt="Torta de Frutas">
+                <h3>Torta de Frutas</h3>
+                <p>Torta fresca com uma seleção de frutas da estação.</p>
+                <p class="preco">R$ 69,90</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://cdnm.westwing.com.br/glossary/uploads/br/2021/05/07092134/cupcakes-floridos-cozinha-fonte-unsplash-c-a390.jpg" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <p>Cupcakes decorados de várias maneiras com coberturas irresistíveis.</p>
+                <p class="preco">R$ 14,90 cada</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://static.itdg.com.br/images/360-240/e32bcddb5760f7b33b5916a4cf068349/354452-original-1-.jpg" alt="Pavê">
+                <h3>Pavê</h3>
+                <p>Camadas de biscoito e creme, uma combinação deliciosa e refrescante de acordo com o seu gosto.</p>
+                <p class="preco">R$ 69,90</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://p2.trrsf.com/image/fget/cf/942/530/images.terra.com/2022/07/25/2057955068-cheesecake-de-morango-768x512.jpg" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p>Uma sobremesa cremosa com base crocante e com o recheio de acordo com o seu gosto.</p>
+                <p class="preco">R$ 139,90</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=4882&tipo=r&default=s&ims=fit-in/414x275/filters:quality(60)" alt="Brownie">
+                <h3>Brownie</h3>
+                <p>Delicioso e crocante, com pedaços de chocolate que derretem na boca.</p>
+                <p class="preco">R$ 99,90 cada pedaço</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://www.estadao.com.br/resizer/v2/SFYPBGYE75GDJENLY7475OLBQM.jpeg?quality=80&auth=201862390ce660e696fa114a2bc98bbee99ee779f5aea07ef2e5dfd867e84c7f&width=720&height=503&smart=true" alt="Macaron">
+                <h3>Macaron</h3>
+                <p>Docinho francês, crocante por fora e macio por dentro, disponível em várias cores e sabores.</p>
+                <p class="preco">R$ 42,90 cada</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://www.receitasagora.com.br/wp-content/uploads/2021/04/receita-de-tiramisu-430x305.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>Sobremesa italiana com camadas de café e mascarpone, polvilhada com cacau.</p>
+                <p class="preco">R$ 78,00</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-mini-bolo-fofo-limao.jpg?quality=70" alt="Bolinho de Limão">
+                <h3>Bolinho de Limão</h3>
+                <p>Bolinho leve e areado com um toque refrescante de limão.</p>
+                <p class="preco">R$ 19,90 cada</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://s2-receitas.glbimg.com/DQ157NZUfIQAFq3-oEzO2Jm4r7c=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/Z/I/CKOjKFTDWHghhvRc7uoA/palha-italiana-receita.jpg" alt="Palha Italiana">
+                <h3>Palha Italiana</h3>
+                <p>Doce de brigadeiro com biscoito, polvilhado com leite em pó.</p>
+                <p class="preco">R$ 82,90</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://guiadacozinha.com.br/wp-content/uploads/2011/01/Carolina-recheada-com-doce-de-leite.jpg" alt="Carolina de doce de leite">
+                <h3>Carolina de doce de leite</h3>
+                <p>Uma deliciosa sobremesa brasileira, feita com um leve pão de ló recheado com cremoso doce de leite e coberta com chocolate derretido.</p>
+                <p class="preco">R$ 22,90 cada</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeh3VjsL4y-Npj2EL_2cgME4RYZCQNn4Rzw&s" alt="Pudim de leite condensado">
+                <h3>Pudim de leite condensado</h3>
+                <p>Clássica sobremesa brasileira, o pudim de leite condensado é conhecido por sua textura cremosa e sabor doce.</p>
+                <p class="preco">R$ 54,90</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="/home" class="btn">Voltar para a página inicial</a>
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+     
