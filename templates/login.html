@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Para Sempre Doce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9; /* Fundo cinza claro */
+            color: #444; /* Cor do texto padrão */
+            font-family: 'Roboto', sans-serif; /* Fonte padrão */
+        }
+
+        .login {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 400px; /* Largura máxima do formulário de login */
+            background-color: #ff66b2; /* Fundo rosa */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+            color: #000; /* Texto preto */
+        }
+
+        .login h2 {
+            font-family: 'Great Vibes', cursive; /* Fonte decorativa para o título */
+            font-size: 2em; /* Tamanho do título */
+            text-align: center; /* Centraliza o título */
+        }
+
+        .login input[type="text"],
+        .login input[type="password"] {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem para espaçamento */
+            border: 1px solid #ccc; /* Borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+            font-family: 'Roboto', sans-serif; /* Fonte do input */
+            font-size: 1em; /* Tamanho da fonte */
+        }
+
+        .btn-login {
+            display: block;
+            width: 100%; /* Largura total */
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 10px;
+            text-align: center;
+            background-color: #d5006d; /* Cor do botão */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            text-decoration: none; /* Remove sublinhado */
+            font-family: 'Roboto', sans-serif; /* Fonte do botão */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        .btn-login:hover {
+            background-color: #b0004d; /* Tom mais escuro ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff66b2; /* Fundo rosa */
+            color: #000; /* Texto preto */
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Função para preencher os campos com os dados armazenados
+        window.onload = function() {
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+
+            // Preenche o campo de usuário se houver um valor salvo
+            if (localStorage.getItem('username')) {
+                usernameInput.value = localStorage.getItem('username');
+            }
+
+            // Preenche o campo de senha se houver um valor salvo
+            if (localStorage.getItem('password')) {
+                passwordInput.value = localStorage.getItem('password');
+            }
+        }
+
+        // Função para salvar os dados ao enviar o formulário
+        function saveCredentials() {
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+
+            // Salva os valores no localStorage
+            localStorage.setItem('username', usernameInput.value);
+            localStorage.setItem('password', passwordInput.value);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Para Sempre Doce</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login" class="login">
+        <h2>Login</h2>
+        <form action="/login" method="POST" onsubmit="saveCredentials()">
+            <input type="text" id="username" name="username" placeholder="Usuário" required autocomplete="username">
+            <input type="password" id="password" name="password" placeholder="Senha" required autocomplete="current-password">
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

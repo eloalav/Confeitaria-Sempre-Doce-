@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivos - Para Sempre Doce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9; /* Fundo cinza claro */
+            color: #444; /* Cor do texto padrão */
+            font-family: 'Roboto', sans-serif; /* Fonte padrão */
+        }
+
+        .upload {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 400px; /* Largura máxima do formulário de upload */
+            background-color: #ff66b2; /* Fundo rosa */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+            color: #000; /* Texto preto */
+        }
+
+        .upload h2 {
+            text-align: center; /* Centraliza o título */
+        }
+
+        .upload input[type="file"] {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem para espaçamento */
+            border: 1px solid #ccc; /* Borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        .btn-upload {
+            display: block;
+            width: 100%; /* Largura total */
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 10px;
+            text-align: center;
+            background-color: #d5006d; /* Cor do botão */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            font-family: 'Roboto', sans-serif; /* Fonte do botão */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        .btn-upload:hover {
+            background-color: #b0004d; /* Tom mais escuro ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff66b2; /* Fundo rosa */
+            color: #000; /* Texto preto */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Para Sempre Doce</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section id="upload" class="upload">
+        <h2>Upload de Arquivos</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept=".txt" required>
+            <button type="submit" class="btn-upload">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
